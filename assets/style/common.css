@@ -143,6 +143,10 @@ nav.header-nav {
     background-color: var(--main-color);
 }
 
+.main-menu {
+    width: 100%;
+}
+
 .main-menu li a {
     display: block;
     padding: 16px;
