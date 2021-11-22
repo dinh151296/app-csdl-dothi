@@ -1,0 +1,128 @@
+/* home style */
+main {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.wrap-content-home {
+    width: 100%;
+}
+
+.news-home__title {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.news-home__title > h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.news-home__title  a {
+    color: var(--color-link);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.news-home__title a img {
+    max-width: 20px;
+    margin-left: 4px;
+}
+
+.new__first {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.new__first a {
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px 0px #0000004D;
+}
+
+.new__first a img {
+    border-radius: 4px;
+    transition: 0.6s;
+}
+
+.new__first a:hover img {
+    transform: scale(1.04);
+}
+
+.new__first a h3.title:hover {
+    opacity: 0.7;
+}
+
+
+.new__first a h3.title {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    padding: 15px 18px;
+    background-color:  #00000080;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    transform: 0.2s;
+}
+
+.new__item {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px 0px #0000001A;
+}
+
+.new__item .desc {
+    padding: 8px 10px 14px;
+}
+
+.new__item .desc > h3 a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.new__item .thumb {
+    overflow: hidden;
+}
+
+.new__item .thumb  img {
+    transition: 0.4s;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.new__item .thumb a:hover img {
+    transform: scale(1.04);
+}
+
+.csdl {
+    margin-top: 20px;
+}
+
+.csdl .block-title {
+    margin-bottom: 20px;
+}
+
+.csdl__item a {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.csdl__item a > h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
