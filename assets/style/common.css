@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 @media only screen and (max-width: 767px) {
@@ -294,13 +295,14 @@ nav.header-nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        background-color: transparent;
     }
     
     .header-nav .burger {
         min-width: 50px;
        width: 50px;
-       height: 40px;
-       background-color: #fff;   
+       height: 34px;
+       background-color: var(--main-color);   
        border-radius: 10px;
        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
        cursor: pointer;
@@ -316,11 +318,11 @@ nav.header-nav {
         width: 32px;
         height: 3px;
         border-radius: 3px;
-        background-color: var(--color-link);
+        background-color: #fff;
         transition: 0.5s;
     }
     .burger span:nth-child(1) {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
         width: 24px;
         left: 9px;
     }
@@ -328,7 +330,7 @@ nav.header-nav {
         transform: translateX(70px);
     }
     .burger span:nth-child(2) {
-        transform: translateY(10px);
+        transform: translateY(8px);
         width: 13px;
         left: 9px;
     }
@@ -375,6 +377,7 @@ nav.header-nav {
         justify-content: center;
         position: relative;
         padding-top: 40px;
+        padding-bottom: 0px;
     }
     .header__admin {
         position: absolute;

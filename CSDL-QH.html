@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSDL-ALL</title>
+    <title>CSDL-QH</title>
 
      <!-- bootstrap -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -24,8 +24,10 @@
             <div class="container">
                 <div class="header-top-inner d-flex align-items-center">
                     <h3 class="header__logo">
-                        CSDL đô thị liên thông
-                        <span>Đô thị thông minh</span>
+                        <a href="index.html">
+                            CSDL đô thị liên thông
+                            <span>Đô thị thông minh</span>
+                        </a>
                     </h3>
                     <div class="header__search">
                         <form action="" class="w-100">
@@ -53,21 +55,56 @@
                         <a  href="index.html">Trang chủ</a>
                     </li>
                     <li>
-                        <a class="active" href="index.html">CSDL Quy hoạch - Đất Đai - Xây Dựng</a>
+                        <a class="active" href="index.html">CSDL Quy hoạch - Đất Đai - Xây Dựng
+                            <img src="assets/image/menu-down.svg" alt="">
+                        </a>
+                        
+                        <ul class="sub-menu-header">
+                            <li><a href="">Cơ sở dữ liệu Quy hoạch</a></li>
+                            <li><a href="">Cơ sở dữ liệu Dự án đầu tư Xây dựng</a></li>
+                            <li><a href="">Cơ sở dữ liệu Đất đai</a></li>
+                            <li><a href="">Cơ sở dữ liệu Giao thông</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="index.html">CSDL an sinh xã hội</a>
+                        <a href="index.html">CSDL an sinh xã hội <img src="assets/image/menu-down.svg" alt=""></a>
+
+                        <ul class="sub-menu-header">
+                            <li><a href="">Dân cư</a></li>
+                            <li><a href="">Giáo dục</a></li>
+                            <li><a href="">Y tế</a></li>
+                            <li><a href="">Du lịch</a></li>
+                            <li><a href="">Văn hóa</a></li>
+                            <li><a href="">Thể thao</a></li>
+                            <li><a href="">Thương binh xã hội</a></li>
+                            <li><a href="">Khác</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="index.html">Tiện ích</a>
+                        <a href="index.html">Tiện ích<img src="assets/image/menu-down.svg" alt=""></a>
+
+                        <ul class="sub-menu-header">
+                            <li><a href="">Xe buýt</a></li>
+                            <li><a href="">Bảo hiểm</a></li>
+                            <li><a href="">Tra cứu tiêm chủng</a></li>
+                            <li><a href="">Thông tin Covid-19</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="index.html">Phản ánh hiện trường</a>
+                        <a href="phan-anh-dang-xl.html">Phản ánh hiện trường</a>
                     </li>
                 </ul>
             </div>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
         </nav>
     </header>
+
 
     <main>
         <div class="wrap-csdl">
@@ -82,6 +119,7 @@
                             <div class="form-row">
                                 <div class="col-7 form-group custom">
                                     <input class="form-control" type="text" placeholder="Nhập tên dự án...">
+                                    <img src="assets/image/fi_search.svg" alt="">
                                 </div>
                                 <div class="col-5 form-group">
                                     <select class="custom-select" name="" id="">
@@ -156,7 +194,7 @@
         </div>
     </main>
 
- 
+    <script src="assets/js/menu.js"></script>
 </body>
 
 </html>
