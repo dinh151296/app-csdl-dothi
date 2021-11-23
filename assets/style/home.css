@@ -46,6 +46,8 @@ main {
 .new__first a img {
     border-radius: 4px;
     transition: 0.6s;
+    min-height: 240px;
+    object-fit: cover;
 }
 
 .new__first a:hover img {
