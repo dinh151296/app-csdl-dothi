@@ -255,7 +255,14 @@ nav.header-nav {
     background-size: 0px;
 }
 
+@media only screen and (min-width:1100px) {
+    .only-sp {
+        display: none !important;
+    }
+}
+
 @media only screen and (max-width:1100px) {
+    
     .main-menu {
         position: absolute;
         top: 100%;
@@ -267,7 +274,7 @@ nav.header-nav {
         flex-direction: column;
         align-items: flex-start !important;
         justify-content: flex-start !important;
-        min-height: 100vh;
+        min-height: calc(100vh - 95px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 
         transform: translateX(100%);
@@ -285,6 +292,10 @@ nav.header-nav {
         visibility: visible;
         background-color: transparent;
         box-shadow: unset;
+        display: none;
+    }
+    .main-menu li:hover .sub-menu-header  {
+        display: block;
     }
     .main-menu li > a {
         color: var(--text-color);
@@ -299,7 +310,7 @@ nav.header-nav {
         fill: var(--text-color);
     }
     nav.header-nav {
-        padding: 10px 15px;
+        padding: 0px;
         position: relative;
         display: flex;
         justify-content: flex-end;
@@ -307,7 +318,7 @@ nav.header-nav {
         background-color: transparent;
     }
     
-    .header-nav .burger {
+    .burger {
         min-width: 50px;
        width: 50px;
        height: 34px;
@@ -320,6 +331,11 @@ nav.header-nav {
        align-items: center;
        justify-content: center;
        overflow: hidden;
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       right: 15px;
+       z-index: 10;
     }
     .burger span {
         left: 9px;
@@ -376,22 +392,18 @@ nav.header-nav {
         padding-left: 36px;
     }
 
-} 
-
-@media only screen and (max-width:991px) {
     .header__search {
         display: none !important;
     }
     .header-top-inner {
-        justify-content: center;
         position: relative;
-        padding-top: 40px;
-        padding-bottom: 0px;
+       
+    }
+    .header-top-inner .header__admin {
+        display: none !important;
     }
     .header__admin {
-        position: absolute;
-        top: 5px;
-        right: 0px;
+        padding: 15px;
     }
     .header__admin a {
         font-size: 14px;
@@ -403,6 +415,11 @@ nav.header-nav {
     .header__admin .notification {
         margin-left: 5px;
     }
+
+} 
+
+@media only screen and (max-width:991px) {
+    
     
 }
 /* =========end header========= */
@@ -931,6 +948,11 @@ section .eyecatch__inner {
        padding-left: 15px;
        padding-right: 15px;
     }
+
+    section.eyecatch {
+        display: none;
+    }
+   
 
     section .eyecatch__inner {
         height: 180px;
