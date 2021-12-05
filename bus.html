@@ -2,23 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gửi phản ánh</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Xe Buýt</title>
 
     <!-- bootstrap -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- bootstrap -->
+
+    <!-- slick-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick-carousel -->
 
     <link rel="stylesheet" href="assets/style/common.css" type="text/css">
-    <link rel="stylesheet" href="assets/style/news.css" type="text/css">
+    <link rel="stylesheet" href="assets/style/bus.css" type="text/css">
 
 </head>
 
 <body>
     <header>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="top-header-wrap">
             <div class="container">
                 <div class="header-top-inner d-flex align-items-center">
@@ -51,11 +66,14 @@
             <div class="container">
                 <ul class="main-menu d-flex justify-content-center align-items-center">
                     <li>
-                        <a  href="index.html">Trang chủ</a>
+                        <a class="active" href="index.html">Trang chủ</a>
                     </li>
                     <li>
                         <a href="index.html">CSDL Quy hoạch - Đất Đai - Xây Dựng
-                            <img src="assets/image/menu-down.svg" alt="">
+                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.695 0H0.31758C0.0322651 0 -0.0900126 0.312195 0.0730244 0.507317L3.53756 3.82439C3.78212 4.05854 4.18971 4.05854 4.43426 3.82439L7.8988 0.507317C8.1026 0.312195 7.98032 0 7.695 0Z" />
+                            </svg>
+                                
                         </a>
                         
                         <ul class="sub-menu-header">
@@ -66,7 +84,11 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="index.html">CSDL an sinh xã hội <img src="assets/image/menu-down.svg" alt=""></a>
+                        <a href="ASXH.html">CSDL an sinh xã hội 
+                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.695 0H0.31758C0.0322651 0 -0.0900126 0.312195 0.0730244 0.507317L3.53756 3.82439C3.78212 4.05854 4.18971 4.05854 4.43426 3.82439L7.8988 0.507317C8.1026 0.312195 7.98032 0 7.695 0Z" />
+                            </svg>
+                        </a>
 
                         <ul class="sub-menu-header">
                             <li><a href="">Dân cư</a></li>
@@ -80,7 +102,11 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="index.html">Tiện ích<img src="assets/image/menu-down.svg" alt=""></a>
+                        <a href="index.html">Tiện ích
+                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.695 0H0.31758C0.0322651 0 -0.0900126 0.312195 0.0730244 0.507317L3.53756 3.82439C3.78212 4.05854 4.18971 4.05854 4.43426 3.82439L7.8988 0.507317C8.1026 0.312195 7.98032 0 7.695 0Z" />
+                            </svg>
+                        </a>
 
                         <ul class="sub-menu-header">
                             <li><a href="">Xe buýt</a></li>
@@ -90,13 +116,24 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="active" href="index.html">Phản ánh hiện trường</a>
+                        <a href="phan-anh-dang-xl.html">Phản ánh hiện trường</a>
                     </li>
+                    <div class="header__admin only-sp  d-flex align-items-center">
+                        <a class="register" href="javscript:void(0)">Đăng ký</a>
+                        <span>|</span>
+                        <a class="login" href="javscript:void(0)">Đăng nhập</a>
+                        <a class="notification" href="">
+                            <img src="assets/image/notifications.svg" alt="">
+                        </a>
+                    </div>
                 </ul>
             </div>
+
+           
+            
         </nav>
     </header>
-    
+
     <section class="eyecatch">
         <div class="container">
             <div class="eyecatch__inner">
@@ -104,98 +141,117 @@
             </div>
         </div>
     </section>
-
     <main>
         <div class="wrap-content-page">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-8 col-custom">
-                        <div class="wrap-left wrap-left-page-padxl">
-                            <div class="top-content d-flex flex-wrap align-items-end  justify-content-between">
-                                <h3>Phản ánh hiện trường</h3>
-                                <div class="select-page d-flex align-items-end">
-                                    <a class="" href="phan-anh-dang-xl.html">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.0546 8.61177L9.96119 9.10203C9.61655 8.63466 9.18781 8.23325 8.69845 7.9196L9.12338 6.80329C9.20466 6.58982 9.09664 6.3513 8.88227 6.27047L7.79438 5.86021C7.69143 5.82137 7.57719 5.82484 7.47681 5.86988C7.37643 5.91492 7.29814 5.99774 7.25912 6.1003L6.83419 7.21661C6.25882 7.12867 5.67067 7.14653 5.10136 7.26926L4.60885 6.18088C4.5636 6.08096 4.48041 6.00302 4.37737 5.96418C4.27442 5.92534 4.16018 5.92881 4.0598 5.97385L2.99915 6.44948C2.79009 6.5432 2.6971 6.788 2.79117 6.99594L3.28368 8.08432C2.81416 8.42739 2.41091 8.85418 2.09582 9.3413L0.974395 8.91831C0.760023 8.83748 0.520327 8.94492 0.439128 9.15832L0.0269048 10.2412C-0.0120343 10.3436 -0.00863022 10.4573 0.0366188 10.5573C0.0818679 10.6572 0.16506 10.7351 0.268095 10.774L1.38944 11.1969C1.3006 11.7702 1.31895 12.3567 1.44225 12.9219L0.348962 13.4121C0.248584 13.4571 0.170291 13.5399 0.131268 13.6425C0.0923293 13.7449 0.0957334 13.8587 0.140982 13.9586L0.618796 15.0145C0.712947 15.2226 0.958704 15.3153 1.16776 15.2215L2.26113 14.7313C2.60577 15.1986 3.03451 15.6001 3.52387 15.9137L3.09894 17.03C3.06 17.1324 3.06349 17.2461 3.10866 17.3461C3.15391 17.4461 3.2371 17.524 3.34013 17.5628L4.42794 17.9731C4.64231 18.0539 4.88201 17.9465 4.9632 17.7331L5.38813 16.6168C5.96342 16.7047 6.55174 16.6869 7.12096 16.5641L7.61347 17.6526C7.65872 17.7525 7.74191 17.8304 7.84495 17.8693C7.9479 17.9081 8.06214 17.9047 8.16252 17.8596L9.22318 17.384C9.32355 17.339 9.40185 17.2561 9.44087 17.1537C9.47989 17.0511 9.47649 16.9374 9.43115 16.8375L8.93865 15.7492C9.40824 15.4061 9.81141 14.9794 10.1265 14.4922L11.2479 14.9152C11.4623 14.996 11.702 14.8886 11.7832 14.6752L12.1953 13.5922C12.2133 13.545 12.2222 13.4954 12.2222 13.4459C12.2222 13.3879 12.21 13.33 12.1856 13.2761C12.1404 13.1762 12.0572 13.0983 11.9541 13.0594L10.8328 12.6365C10.9216 12.0632 10.9033 11.4766 10.78 10.9115L11.8733 10.4213C11.9737 10.3763 12.0519 10.2935 12.091 10.1909C12.13 10.0884 12.1266 9.97462 12.0813 9.87478L11.6035 8.81897C11.5094 8.61078 11.2636 8.51805 11.0546 8.61177ZM7.10842 9.29658C8.19606 9.70676 8.92677 10.7599 8.92677 11.9172C8.92677 12.2558 8.865 12.5896 8.74329 12.9094C8.47694 13.6093 7.95271 14.164 7.26717 14.4713C6.58171 14.7787 5.81696 14.8019 5.1139 14.5368C4.02626 14.1266 3.29555 13.0735 3.29555 11.9162C3.29555 11.5776 3.35732 11.2438 3.47903 10.924C3.74538 10.2241 4.26961 9.6694 4.95507 9.36204C5.64061 9.05459 6.40536 9.03137 7.10842 9.29658ZM12.7771 0.108818C12.696 0.18287 12.6477 0.286095 12.643 0.395519L12.6095 1.17389C12.2404 1.24554 11.8842 1.37497 11.5553 1.55679L11.0261 0.982808C10.8711 0.814622 10.6085 0.803465 10.4396 0.957766L9.81573 1.5277C9.73461 1.60175 9.68638 1.70498 9.68164 1.81448C9.67758 1.92374 9.71618 2.03085 9.79057 2.1116L10.3198 2.6855C10.1096 2.99617 9.94965 3.33841 9.84637 3.69825L9.06443 3.66486C8.83536 3.65511 8.64174 3.83206 8.63195 4.06008L8.59567 4.90217C8.58703 5.12903 8.76363 5.32292 8.99261 5.33268L9.77455 5.36607C9.84653 5.73335 9.97655 6.08799 10.1591 6.41543L9.58251 6.94222C9.50139 7.01627 9.45316 7.1195 9.44842 7.22893C9.44394 7.33835 9.48296 7.44529 9.55735 7.52604L10.1299 8.14705C10.2849 8.31524 10.5475 8.32639 10.7164 8.17209L11.293 7.6453C11.6051 7.85448 11.9488 8.01374 12.3104 8.11655L12.2769 8.89484C12.2676 9.12187 12.4447 9.31568 12.6738 9.32543L13.5198 9.36154C13.6298 9.36625 13.7371 9.32725 13.8182 9.25311C13.8994 9.17906 13.9476 9.07583 13.9523 8.96633L13.9858 8.18804C14.3548 8.11639 14.7111 7.98696 15.04 7.80522L15.5693 8.37912C15.6436 8.45987 15.7473 8.50788 15.8573 8.5126C15.9673 8.51731 16.0746 8.4783 16.1557 8.40416L16.7796 7.83423C16.8607 7.76018 16.909 7.65695 16.9137 7.54745C16.9181 7.43843 16.8792 7.33108 16.8048 7.25033L16.2756 6.67643C16.4857 6.36576 16.6457 6.02352 16.749 5.66368L17.5309 5.69707C17.76 5.70682 17.9536 5.52995 17.9634 5.30193L17.9997 4.45984C17.9999 4.45389 18 4.44802 18 4.44216C18 4.33885 17.9611 4.23909 17.8907 4.16273C17.8163 4.08198 17.7126 4.03396 17.6027 4.02925L16.8208 3.99586C16.7488 3.62858 16.6188 3.27394 16.4362 2.9465L17.0128 2.41971C17.0939 2.34565 17.1422 2.24243 17.1469 2.13301C17.1517 2.02308 17.1124 1.91655 17.038 1.83589L16.4654 1.21488C16.3104 1.04669 16.0478 1.03554 15.8789 1.18984L15.3023 1.71663C14.9902 1.50745 14.6465 1.34819 14.2849 1.24538L14.3185 0.467091C14.3273 0.239316 14.1506 0.0463371 13.9215 0.0365021L13.0756 0.000385871C12.9656 -0.00432499 12.8582 0.0346839 12.7771 0.108818ZM15.2317 4.76357C15.186 5.82509 14.2812 6.65172 13.2148 6.60618C12.1758 6.56188 11.3619 5.71698 11.3619 4.68274C11.3619 4.65481 11.3625 4.62671 11.3637 4.59852C11.4095 3.53701 12.3142 2.71037 13.3806 2.75591C14.4477 2.80145 15.2768 3.69338 15.2317 4.76357Z" />
-                                        </svg>
-                                        <span>Đang xử lý</span>
-                                    </a>
-                                    <a class="" href="phan-anh-da-xl.html">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_145_4977)">
-                                            <path d="M8.87584 13.8595C8.87584 13.6198 8.89236 13.3884 8.92542 13.157C8.46261 13.1487 7.9998 13.0578 7.55352 12.8843C5.95848 12.281 4.8841 10.7273 4.8841 9.01651C4.8841 8.52065 4.97501 8.02478 5.15683 7.5537C5.54526 6.52065 6.31385 5.70247 7.32212 5.24792C8.33038 4.79337 9.45435 4.76032 10.4874 5.14875C12.0577 5.74379 13.1155 7.24792 13.1568 8.91734C13.9833 8.80164 14.8345 8.88428 15.6362 9.19007C15.7767 9.23965 15.9089 9.29751 16.0329 9.36362C16.0659 8.75205 16.0163 8.13222 15.8841 7.52891L17.4874 6.80164C17.6362 6.73552 17.7519 6.61156 17.8097 6.4628C17.8676 6.31403 17.8593 6.14048 17.7932 5.99999L17.0907 4.438C16.9502 4.13222 16.5948 3.99172 16.2808 4.13222L14.6775 4.85949C14.1734 4.17354 13.537 3.5785 12.818 3.11569L13.4461 1.47106C13.5618 1.15701 13.4048 0.80164 13.0907 0.685938L11.4957 0.0826323C11.3469 0.0247811 11.1734 0.0330455 11.0329 0.0991612C10.8841 0.165277 10.7684 0.289244 10.7105 0.438004L10.0824 2.08263C9.23947 1.9504 8.3717 1.97519 7.53699 2.15701L6.81798 0.553707C6.75187 0.404946 6.6279 0.289244 6.47914 0.231393C6.33038 0.173541 6.15683 0.181806 6.01633 0.247921L4.45435 0.950401C4.14856 1.0909 4.00807 1.44627 4.14856 1.76032L4.87583 3.36362C4.18988 3.86776 3.59484 4.50412 3.13203 5.22313L1.4874 4.59503C1.15683 4.47106 0.809719 4.62809 0.685752 4.94213L0.0824461 6.54544C0.0245949 6.6942 0.0245949 6.85949 0.0907106 7.00825C0.165091 7.15701 0.280793 7.27271 0.437818 7.33056L2.08245 7.95866C1.95021 8.80164 1.97501 9.66941 2.15683 10.5041L0.553521 11.2314C0.40476 11.2975 0.289058 11.4215 0.231206 11.5702C0.173355 11.719 0.18162 11.8925 0.247735 12.033L0.950215 13.595C1.09071 13.9008 1.44608 14.0413 1.76013 13.9008L3.36344 13.1735C3.86757 13.8595 4.50393 14.4545 5.22294 14.9173L4.59484 16.562C4.53699 16.7107 4.54526 16.8843 4.61137 17.0248C4.67749 17.1735 4.80146 17.2892 4.95022 17.3471L6.54526 17.9504C6.85931 18.0661 7.21468 17.9091 7.33038 17.595L7.95848 15.9504C8.42955 16.0248 8.90063 16.0413 9.3717 16.0248C9.04939 15.3636 8.87584 14.6281 8.87584 13.8595Z" />
-                                            <path d="M13.8681 9.72754C11.5871 9.72754 9.73584 11.5788 9.73584 13.8598C9.73584 16.1408 11.5871 17.992 13.8681 17.992C16.1491 17.992 18.0003 16.1408 18.0003 13.8598C18.0003 11.5788 16.1491 9.72754 13.8681 9.72754ZM16.1739 12.7771L13.5292 15.397C13.3722 15.554 13.1243 15.5622 12.959 15.4052L11.5623 14.1325C11.397 13.9755 11.3887 13.7193 11.5292 13.554C11.6863 13.3887 11.9425 13.3804 12.1077 13.5292L13.2234 14.5457L15.5871 12.1821C15.7524 12.0168 16.0086 12.0168 16.1739 12.1821C16.3391 12.3556 16.3391 12.6118 16.1739 12.7771Z" />
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_145_4977">
-                                            <rect width="18" height="18" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                       <span> Đã xử lý</span>
-                                    </a>
-                                    <a class="active report" href="#">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.3077 16.6092H6.27979L15.9376 6.90809L16.9166 5.92508C18.2583 4.5655 18.2535 2.37197 16.9058 1.0185C15.5583 -0.335302 13.3746 -0.340056 12.0211 1.00764L11.0424 1.99099L1.25177 11.8255L1.24534 11.8337C1.1899 11.8928 1.14494 11.961 1.11249 12.0354C1.10438 12.0551 1.09863 12.0737 1.09187 12.0931C1.08072 12.1192 1.07125 12.1461 1.06348 12.1732L0.0145358 17.1606C0.00777494 17.2 0.00473257 17.2397 0.00473257 17.2795C0.00473257 17.2886 0 17.2954 0 17.3046V17.3151C0.00202829 17.3956 0.0179161 17.475 0.0469877 17.5501C0.0540865 17.5674 0.0608474 17.5834 0.0692984 17.6C0.101074 17.672 0.145358 17.7379 0.199444 17.7949C0.329928 17.9267 0.507399 18.0007 0.692308 18H17.3077C17.69 18 18 17.6886 18 17.3046C18 16.9205 17.69 16.6092 17.3077 16.6092ZM4.26472 15.836L1.59217 16.4007L2.15738 13.7135L3.2124 14.7732L4.26472 15.836ZM13 1.99099C13.8225 1.2039 15.1152 1.2039 15.9376 1.99099C16.7489 2.80558 16.7489 4.12679 15.9376 4.94172L15.4475 5.4334L12.5106 2.48334L13 1.99099ZM11.5319 3.46602L13 4.94104L14.4692 6.41641L5.65678 15.2676L4.18833 13.7929L2.72021 12.3172L11.5319 3.46602Z" />
-                                        </svg>
-                                        <span>Báo sự cố</span>
-                                    </a>
-                                </div>  
+                        <div class="wrap-left">
+                            <div class="bus__title d-flex align-items-center justify-content-between">
+                                <h3>Xe buýt</h3>
+                                <div class="filter">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <select  class="form-control">
+                                                <option selected>Chọn tuyến buýt</option>
+                                                <option value="0">Tuyến 01</option>
+                                                <option value="1">Tuyến 02</option>
+                                                <option value="2">Tuyến 03A</option>
+                                                <option value="3">Tuyến 03B </option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            
-                            <div class="send-form">
-                                <form action="">
-                                    <div class="form-group">
-                                        <label for="content">Nội dung</label>
-                                        <textarea class="form-control" id="content" cols="30" rows="10" placeholder="Nhập nội dung phản ánh"></textarea>
+                            <div class="bus__content">
+                                <h3>01.BX Gia Lâm - BX Yên Nghĩa</h3>
+                                <table class="table">
+                                    
+                                    <tbody>
+                                      <tr>
+                                        <td scope="row"> Đơn vị đảm nhận:</td>
+                                        <td>Xí Nghiệp Xe Buýt Hà Nội (Hanoibus)</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">Giá vé:</td>
+                                        <td>7000đ/lượt</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">Cự ly:</td>
+                                        <td>22.4 km</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">Thời gian hoạt động:</td>
+                                        <td>5h00 - 21h00(BX Gia Lâm)</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                                <div class="content__block">
+                                    <h4>Chiều đi</h4>
+                                    <p>
+                                        Bến xe Gia Lâm - Ngô Gia Khảm - Ngọc Lâm - Nguyễn Văn Cừ - Cầu Chương Dương - Trần Nhật Duật - Yên Phụ - Điểm trung chuyển Long Biên - Hàng Đậu - Hàng Cót - Hàng Gà - Hàng Điếu - Đường Thành - Phủ Doãn - Triệu Quốc Đạt - Hai Bà Trưng - Lê Duẩn - Khâm Thiên - Đường mới (Vành đai 1) - Quay đầu tại điểm mở dải phân cách - Đường mới (Vành đai 1)- Nguyễn Lương Bằng - Tây Sơn - Ngã tư Sở - Nguyễn Trãi - Trần Phú (Hà Đông) - Quang Trung (Hà Đông) - Ba La - Quốc lộ 6 - Bến xe Yên Nghĩa.
+                                    </p>
+                                </div>
+                                <div class="content__block">
+                                    <h4>Chiều về</h4>
+                                    <p>
+                                        Bến xe Yên Nghĩa - Quốc lộ 6 - Ba La - Quang Trung (Hà Đông) - Trần Phú (Hà Đông) - Nguyễn Trãi - Ngã tư Sở - Tây Sơn - Nguyễn Lương Bằng - Xã Đàn - Quay đầu tại đối diện ngõ Xã Đàn 2 - Xã Đàn - Khâm Thiên - Nguyễn Thượng Hiền - Yết Kiêu - Trần Hưng Đạo - Quán Sứ - Hàng Da - Đường Thành - Phùng Hưng - Lê Văn Linh - Phùng Hưng (đường trong) - Phan Đình Phùng - Hàng Đậu - Trần Nhật Duật - Cầu Chương Dương - Nguyễn Văn Cừ - Nguyễn Sơn - Ngọc Lâm - Ngô Gia Khảm - Bến xe Gia Lâm.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="csdl-an-sinh">
+                                <h3 class="block-title">CSDL An sinh</h3>
+                                <div class="an-sinh-xh-slide">
+                                    <div class="slide__item">
+                                        <a href="">
+                                            <img src="assets/image/education.png" alt="">
+                                            <h4>Giáo dục</h4>
+                                        </a>
                                     </div>
-                                    <div class="form-row align-items-end">
-                                        <div class="form-group col-12 col-md-8">
-                                            <label for="location">Vị trí cần phản ánh</label>
-                                            <input class="form-control" type="text" placeholder="Nhập vị trí...">
-                                        </div>
-                                        <div class="col-6 col-md-2">
-                                            <div class="form-btn present">
-                                                <img src="assets/image/fi_disc.svg" alt="">
-                                                Hiện tại
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-md-2">
-                                            <div class="form-btn map">
-                                                <img src="assets/image/ic_baseline-map.svg" alt="">
-                                                Bản đồ
-                                            </div>
-                                        </div>
+                                    <div class="slide__item">
+                                        <a href="">
+                                            <img src="assets/image/medical.png" alt="">
+                                            <h4>Y tế</h4>
+                                        </a>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Tự động lấy vị trí hiện tại mỗi khi phản ánh</label>
+                                    <div class="slide__item">
+                                        <a href="">
+                                            <img src="assets/image/travel-bag.png" alt="">
+                                            <h4>Du lịch</h4>
+                                        </a>
                                     </div>
-
-                                    <div class="attach">
-                                        <h3>Hình ảnh</h3>
-                                        <div class="attach__row">
-                                            <img src="assets/image/attach01.jpg" alt="">
-                                            <div class="add">
-                                                <img src="assets/image/fi_plus-circle.svg" alt="">
-                                                <span>Thêm ảnh</span>
-                                                <input type="file">
-                                            </div>
-                                        </div>
-                                        <h3>Video</h3>
-                                        <div class="attach__row">
-                                            <img src="assets/image/attach01.jpg" alt="">
-                                            <div class="add">
-                                                <img src="assets/image/fi_plus-circle.svg" alt="">
-                                                <span>Thêm ảnh</span>
-                                                <input type="file">
-                                            </div>
-                                        </div>
+                                    <div class="slide__item">
+                                        <a href="">
+                                            <img src="assets/image/cultures.png" alt="">
+                                            <h4>Văn hóa</h4>
+                                        </a>
                                     </div>
-
-                                    <button type="submit" class="btn ">Gửi phản ánh</button>
-                                </form>
-                            </div>    
+                                    <div class="slide__item">
+                                        <a href="">
+                                            <img src="assets/image/cultures.png" alt="">
+                                            <h4>Thể thao</h4>
+                                        </a>
+                                    </div>
+                                    <div class="slide__item">
+                                        <a href="">
+                                            <img src="assets/image/education.png" alt="">
+                                            <h4>Giáo dục</h4>
+                                        </a>
+                                    </div>
+                                    <div class="slide__item">
+                                        <a href="">
+                                            <img src="assets/image/education.png" alt="">
+                                            <h4>Giáo dục</h4>
+                                        </a>
+                                    </div>
+                                    <div class="slide__item">
+                                        <a href="">
+                                            <img src="assets/image/education.png" alt="">
+                                            <h4>Giáo dục</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 col-custom">
@@ -333,13 +389,13 @@
             </div>
         </div>
     </main>
-
+    <!-- end main -->
     <footer>
         <div class="container">
             <h2 class="footer-title text-center">
                 Hệ thống CSDL Đô thị - Thành phố Hà Nội
             </h2>
-            <div class="footer__inner d-flex flex-wrap">
+            <div class="footer__inner d-flex  flex-wrap">
                 <div class="block address d-flex align-items-start">
                     <img src="assets/image/place-24px.png" alt="">
                     <p>Khu liên cơ quan Võ Chí Công, số 258 Võ Chí Công, phường Xuân La, quận Tây Hồ, Hà Nội</p>
@@ -431,8 +487,52 @@
         <img src="assets/image/ontop.svg" alt="">
     </div>
 
-    <script src="assets/js/common.js"></script>
+    <!-- slick-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $('.an-sinh-xh-slide').slick({
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2, slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <!-- slick-carousel -->
 
+    <script src="assets/js/common.js"></script>
 </body>
 
 </html>

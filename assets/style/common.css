@@ -267,17 +267,18 @@ nav.header-nav {
         position: absolute;
         top: 100%;
         width: 100%;
-        max-width: 320px;
+        max-width: 330px;
         background-color: #fff;
         z-index: 1000;
         right: 0px;
         flex-direction: column;
         align-items: flex-start !important;
         justify-content: flex-start !important;
-        min-height: calc(100vh - 95px);
+        height: 100vh;
+        overflow-y: auto;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 
-        transform: translateX(100%);
+        transform: translateX(105%);
         transition: all 0.4s ease-in;
     }
     .main-menu.show {
@@ -287,15 +288,11 @@ nav.header-nav {
         width: 100%;
     }
     .sub-menu-header {
-        position: relative;
-        opacity: 1;
-        visibility: visible;
+        position: static;
         background-color: transparent;
         box-shadow: unset;
-        display: none;
-    }
-    .main-menu li:hover .sub-menu-header  {
-        display: block;
+        opacity: 1;
+        visibility: visible;
     }
     .main-menu li > a {
         color: var(--text-color);
@@ -311,7 +308,6 @@ nav.header-nav {
     }
     nav.header-nav {
         padding: 0px;
-        position: relative;
         display: flex;
         justify-content: flex-end;
         align-items: center;

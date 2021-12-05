@@ -1,0 +1,62 @@
+/* xe buýt style */
+
+.bus__title {
+    margin-bottom: 15px;
+}
+
+.bus__title > h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.filter form select {
+    font-size: 14px;
+    color:#4E4E4E;
+    min-height: 40px;
+    border-radius: 3px;
+    border: 1px solid #C0C1C4;
+}
+
+.bus__content {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.bus__content > h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.content__block {
+    margin-top: 24px;
+    color: var(--text-color);
+}
+
+.content__block > h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.content__block > p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.table td, .table th {
+    border-top: none;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.table td, .table th {
+    padding-left: 0px;
+}
+
+.csdl-an-sinh {
+    margin-top: 40px;
+}
